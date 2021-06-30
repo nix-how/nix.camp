@@ -30,7 +30,7 @@ jobs:
         PATH="$HOME/.nix-profile/bin:$PATH"
         echo "PATH=${PATH}" >> $GITHUB_ENV
 
-    - name: Building summer.nixos.org
+    - name: Building nix.camp
       run: |
         nix build
         mkdir build
@@ -51,4 +51,4 @@ jobs:
         enable-commit-comment: true
         enable-commit-status: true
         overwrites-pull-request-comment: false
-      if: github.repository == 'NixOS/nixos-summer'
+      if: github.repository == 'nix-how/nix.camp'

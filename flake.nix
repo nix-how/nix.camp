@@ -26,8 +26,8 @@
             let
               titleFinal =
                 if title == null
-                then "Summer of Nix"
-                else "Summer of Nix - ${title}";
+                then "Nix Camp"
+                else "Nix Camp - ${title}";
               bodyFinal =
                 if body == null
                 then builtins.readFile (self + "/" + path)
