@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   width="17.134319mm"
+   height="13.338887mm"
+   viewBox="0 0 17.134319 13.338887"
+   version="1.1"
+   id="svg8">
+  <defs
+     id="defs2">
+    <rect
+       x="-27.856012"
+       y="47.683041"
+       width="258.26285"
+       height="46.010601"
+       id="rect12" />
+    <rect
+       x="-27.856012"
+       y="47.683041"
+       width="258.26285"
+       height="46.010601"
+       id="rect20" />
+  </defs>
+  <metadata
+     id="metadata5">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     id="layer1"
+     transform="translate(-4.8089661,-57.338089)">
+    <g
+       aria-label="Nix?how"
+       transform="matrix(0.67542102,0,0,0.67542102,8.2992134,17.898699)"
+       id="text10"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:10.5833px;line-height:1.25;font-family:Vegur;-inkscape-font-specification:Vegur;letter-spacing:0px;word-spacing:0px;white-space:pre;shape-inside:url(#rect12)">
+      <g
+         aria-label="HOW"
+         id="text64"
+         style="font-size:10.5833px;line-height:1.25;font-family:'Helvetica Ultra Compressed';-inkscape-font-specification:'Helvetica Ultra Compressed';letter-spacing:0px;word-spacing:0px;stroke-width:0.264583">
+        <path
+           d="m -5.1672778,70.276173 h 1.0438606 v 3.162588 h 3.79303808 V 70.276173 H 0.71348149 V 77.99144 H -0.33037912 V 74.317257 H -4.1234172 v 3.674183 h -1.0438606 z"
+           style="stroke-width:0.264583"
+           id="path851" />
+        <path
+           d="m 5.9224492,70.984138 q -1.1368779,0 -1.8086694,0.847491 -0.6666238,0.84749 -0.6666238,2.309929 0,1.457271 0.6666238,2.304761 0.6717915,0.847491 1.8086694,0.847491 1.1368779,0 1.7983341,-0.847491 0.6666239,-0.84749 0.6666239,-2.304761 0,-1.462439 -0.6666239,-2.309929 -0.6614562,-0.847491 -1.7983341,-0.847491 z m 0,-0.847491 q 1.6226348,0 2.5941486,1.090369 0.9715139,1.085202 0.9715139,2.914542 0,1.824172 -0.9715139,2.914541 -0.9715138,1.085202 -2.5941486,1.085202 -1.6278024,0 -2.6044839,-1.085202 -0.9715138,-1.085201 -0.9715138,-2.914541 0,-1.82934 0.9715138,-2.914542 0.9766815,-1.090369 2.6044839,-1.090369 z"
+           style="stroke-width:0.264583"
+           id="path853" />
+        <path
+           d="m 10.433788,70.276173 h 1.054196 l 1.622635,6.521545 1.617467,-6.521545 h 1.173052 l 1.622634,6.521545 1.617468,-6.521545 h 1.059363 l -1.93786,7.715267 h -1.312577 l -1.627803,-6.697244 -1.643305,6.697244 h -1.312577 z"
+           style="stroke-width:0.264583"
+           id="path855" />
+      </g>
+    </g>
+    <g
+       id="g78"
+       transform="translate(-0.36882637)">
+      <g
+         id="g55"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:10.5833px;line-height:1.25;font-family:Vegur;-inkscape-font-specification:Vegur;letter-spacing:0px;word-spacing:0px;white-space:pre;shape-inside:url(#rect12)"
+         transform="translate(9.378932,-3.8261486)">
+        <path
+           d="m 1.3233425,68.551381 v -7.28131 H 0.49784546 v 4.127487 c 0,0.634998 0,1.312329 0.03175,2.106077 -0.306916,-0.719665 -0.772581,-1.471079 -1.15358,-2.106077 L -3.1745595,61.270071 h -1.02658 v 7.28131 h 0.825497 v -4.212153 c 0,-0.634998 0,-1.100663 -0.03175,-1.947327 0.402165,0.804331 0.709081,1.312329 1.111247,1.947327 l 2.59290796,4.212153 z"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Vegur;-inkscape-font-specification:Vegur"
+           id="path37" />
+        <path
+           d="m 3.2177425,61.640487 c -0.296332,0 -0.539748,0.243416 -0.539748,0.539748 0,0.296332 0.243416,0.539748 0.539748,0.539748 0.296333,0 0.539749,-0.243416 0.539749,-0.539748 0,-0.296332 -0.243416,-0.539748 -0.539749,-0.539748 z m -0.433915,6.910894 h 0.867831 v -5.058817 h -0.867831 z"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Vegur;-inkscape-font-specification:Vegur"
+           id="path39" />
+        <path
+           d="m 7.0382955,66.032556 1.672161,-2.539992 h -0.941914 l -1.174746,1.936744 -1.15358,-1.936744 h -0.99483 l 1.598078,2.539992 -1.640411,2.518825 h 0.941914 l 1.153579,-1.904994 1.164163,1.904994 h 1.005414 z"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Vegur;-inkscape-font-specification:Vegur"
+           id="path41" />
+      </g>
+      <path
+         d="m 9.3136915,62.423651 c 0.380999,-0.306916 1.0371625,-0.497415 1.4816615,-0.497415 0.761997,0 1.164163,0.380999 1.164163,1.015997 0,0.465665 -0.179916,0.89958 -0.973664,1.809744 -0.666748,0.761997 -0.761997,1.375829 -0.761997,2.000243 h 0.941913 c 0,-0.709081 0.116416,-1.132413 0.603248,-1.693327 0.783164,-0.888998 1.164163,-1.502829 1.164163,-2.24366 0,-1.047747 -0.730247,-1.650995 -1.979077,-1.650995 -0.624414,0 -1.3229115,0.1905 -1.6827435,0.476249 z"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:10.5833px;line-height:1.25;font-family:Vegur;-inkscape-font-specification:Vegur;letter-spacing:0px;word-spacing:0px;white-space:pre;shape-inside:url(#rect12);fill:#7eb3de;fill-opacity:1"
+         id="path43"
+         transform="translate(9.378932,-3.8261486)" />
+      <g
+         aria-label="Nix?how"
+         id="text18"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:10.5833px;line-height:1.25;font-family:Vegur;-inkscape-font-specification:Vegur;letter-spacing:0px;word-spacing:0px;white-space:pre;shape-inside:url(#rect20);fill:#5176c1;fill-opacity:1"
+         transform="translate(22.934664,11.448651)">
+        <path
+           d="m -2.8238789,52.112418 c -0.349249,0 -0.634998,0.28575 -0.634998,0.634998 0,0.349249 0.285749,0.634998 0.634998,0.634998 0.349249,0 0.634998,-0.285749 0.634998,-0.634998 0,-0.349248 -0.285749,-0.634998 -0.634998,-0.634998 z"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Vegur;-inkscape-font-specification:Vegur;fill:#5176c1;fill-opacity:1"
+           id="path28" />
+      </g>
+    </g>
+  </g>
+</svg>

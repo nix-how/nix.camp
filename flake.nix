@@ -70,9 +70,9 @@
                             <h4>NixOS</h4>
                             <div>
                               <span>
-                                Copyright © 2021 NixOS contributors
+                                Copyright © 2021 Nix Camp Organizers
                               </span>
-                              <a href="https://github.com/NixOS/nixos-homepage/blob/master/LICENSES/CC-BY-SA-4.0.txt">
+                              <a href="https://github.com/nix-how/nix.camp/blob/main/LICENSE.txt">
                                 <abbr title="Creative Commons Attribution Share Alike 4.0 International">
                                   CC-BY-SA-4.0
                                 </abbr>
@@ -82,10 +82,8 @@
                           <section class="footer-social">
                             <h4>Connect with us</h4>
                             <ul>
-                              <li class="social-icon -twitter"><a href="https://twitter.com/nixos_org">Twitter</a></li>
-                              <li class="social-icon -youtube"><a
-                                  href="https://www.youtube.com/channel/UC3vIimi9q4AT8EgxYp_dWIw">Youtube</a></li>
-                              <li class="social-icon -github"><a href="https://github.com/NixOS">GitHub</a></li>
+                              <li class="social-icon -twitter"><a href="https://twitter.com/nix_camp">Twitter</a></li>
+                              <li class="social-icon -github"><a href="https://github.com/nix-how">GitHub</a></li>
                             </ul>
                           </section>
                         </div>
