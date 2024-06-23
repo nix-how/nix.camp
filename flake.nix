@@ -70,7 +70,7 @@
                             <h4>NixOS</h4>
                             <div>
                               <span>
-                                Copyright © 2023 Nix Camp Organizers
+                                Copyright © 2024 Nix Camp Organizers
                               </span>
                               <a href="https://github.com/nix-how/nix.camp/blob/main/LICENSE.txt">
                                 <abbr title="Creative Commons Attribution Share Alike 4.0 International">
