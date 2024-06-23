@@ -3,19 +3,20 @@
     <div class="blurb">
       <h1>Nix Camp</h1>
       <p>
-	Nix Camp 2023 is a week long event from September 24th to October 1st. A time
+	Nix Camp 2024 is a week long event from September 2nd to September 9th. A time
 	to come together and learn about Nix whilst living near to the
 	Welsh/British countryside, surrounded by nature and friends. There are
 	no formal talks, training sessions or workshops; though attendees are
 	encouraged to give informal talks to eachother. A week
-	of living, breathing, learning and sometimes sleeping with
+	of living, breathing, learning and sometimes sleeping, with
 	Nix.
       </p>
       <p>
-	This is the <emph>third Nix Camp.</emph>
+	This is the <emph>fourth Nix Camp.</emph>
       </p>
       <div class="button-tray">
-        <a class="button -primary" href="#tickets-and-booking">Tickets/Booking</a>
+        <a class="button -primary" href="#tickets-and-booking">Tickets/Booking Information</a>
+        <a class="button" href="https://tickets.nix.camp/nix.camp/2024/" target="_blank">Buy a Ticket</a>
         <a class="button" href="https://www.google.com/maps/place/Bidston+Observatory/@53.400884,-3.074189,106m/data=!3m1!1e3!4m9!3m8!1s0x487b26499a4fffff:0x320df8ee12638eff!5m2!4m1!1i2!8m2!3d53.400611!4d-3.0742279!16s%2Fg%2F11s9tnk7rq!5m1!1e4?entry=ttu" target="_blank">View on Google Maps</a>
         <a class="button" href="https://nix.how/blog/nixcamp-2021-to-2022">Read the 2022 Blog Post!</a>
       </div>
@@ -37,21 +38,23 @@
   <div>
     <h2 id="tickets-and-booking">Tickets/Booking</h2>
     <p>
-      The event is fully booked, and no more applications can be taken, but
-      don't worry, the next camp will be even better.
+      The Nix Camp 2024 dates are <emph>September 2nd until September 9th</emph>.
+      Tickets are priced at <emph>£300 per person</emph>. This covers
+      accomodation and attendance. An AirBNB ticket is also available, and
+			priced at £200 per person if you are able to find your own
+			accomodation
+		</p>
+    <p>
+      Nix Camp is a 1 week long event.
     </p>
     <p>
-      The Nix Camp dates are <emph>September 24th until October 1st</emph>.
-      Tickets are priced at <emph>£200 per person</emph>. This covers
-      accomodation and attendance.
-    </p>
-    <p>
-      Nix Camp is a 1 week long event. Depending on demand, this could increase to two weeks.
-    </p>
-    <p>
-      Since this third Nix Camp is expected to be close-knit, there is no
-      automated booking system, we will be manually accounting and replying to
-      individuals via email.
+			<pre><code>services.pretix.enable = true</code></pre>
+			<pre><code>mailserver.enable = true</code></pre>
+
+			Nix Camp is proudly using the <a href="https://search.nixos.org/options?channel=unstable&show=services.pretix.enable&from=0&size=50&sort=relevance&type=packages&query=pretix">NixOS module for
+			pretix</a> with stripe integration to manage ticketing this
+			year, as well as the <a href="https://gitlab.com/simple-nixos-mailserver/nixos-mailserver">simple-nixos-mailserver</a> for mail
+			services.
     </p>
   </div>
 </section>
@@ -152,7 +155,8 @@
       Food and accommodation is offered on-site for the duration of the event
       <emph>this cost is included in the ticket price.</emph> There are many
       AirBNB and hotel offerings available in the surrounding area if this
-      arrangement does not suit you.
+			arrangement does not suit you, or full accomodation tickets are out of
+			stock.
     </p>
     <p>
       Food will still be provided to those who choose not to stay overnight at
