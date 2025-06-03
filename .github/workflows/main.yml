@@ -23,7 +23,7 @@ jobs:
 
     - name: Installing NixFlakes
       run: |
-        nix-env -iA nixpkgs.nixFlakes
+        nix-env -iA nixpkgs.nixVersions.latest
         echo 'experimental-features = nix-command flakes' | sudo tee -a /etc/nix/nix.conf
         nix --version
         cat /etc/nix/nix.conf

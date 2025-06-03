@@ -70,7 +70,7 @@
                             <h4>NixOS</h4>
                             <div>
                               <span>
-                                Copyright © 2024 Nix Camp Organizers
+                                Copyright © 2025 Nix Camp Organizers
                               </span>
                               <a href="https://github.com/nix-how/nix.camp/blob/main/LICENSE.txt">
                                 <abbr title="Creative Commons Attribution Share Alike 4.0 International">
@@ -103,7 +103,7 @@
           '';
         mkWebsite = { shell ? false }:
           pkgs.stdenv.mkDerivation {
-            name = "nixos-summer-${self.lastModifiedDate}";
+            name = "nix-camp-${self.lastModifiedDate}";
             src = self;
             preferLocalBuild = true;
             enableParallelBuilding = true;
@@ -119,6 +119,7 @@
               popd
 
               cp -R images ./output/images
+              cp -R html ./output/html
 
               mkdir -p ./output/styles
               rm -f styles/common-styles
@@ -177,10 +178,10 @@
       in
         {
           packages."${system}" = {
-            nixos-summer = mkWebsite {};
-            nixos-summer-serve = mkPyScript (with pkgs.python3Packages; [ click livereload ]) "serve";
+            nix-camp = mkWebsite {};
+            nix-camp-serve = mkPyScript (with pkgs.python3Packages; [ click livereload ]) "serve";
           };
-          defaultPackage."${system}" = self.packages."${system}".nixos-summer;
+          defaultPackage."${system}" = self.packages."${system}".nix-camp;
           devPackage."${system}" = mkWebsite { shell = true; };
         };
 }

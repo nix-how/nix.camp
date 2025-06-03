@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Fly to a location with buttons</title>
+    <meta charset='utf-8'>
+    <meta name="viewport" content="width=device-width, initial-scale=2">
+    <link rel='stylesheet' href='https://unpkg.com/maplibre-gl@5.5.0/dist/maplibre-gl.css' />
+    <script src='https://unpkg.com/maplibre-gl@5.5.0/dist/maplibre-gl.js'></script>
+    <style>
+        body, html { margin: 0; padding: 0; height: 100%; font-family: sans-serif; }
+        #map { position: fixed; top: 0; bottom: 0; width: 100%; }
+        #controls {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            background: rgba(255, 255, 255, 0.8);
+            border-radius: 8px;
+            padding: 10px;
+            z-index: 1;
+        }
+        button {
+            display: block;
+            margin: 5px 0;
+            padding: 8px 12px;
+            cursor: pointer;
+            border: none;
+            background-color: #0074D9;
+            color: white;
+            border-radius: 4px;
+        }
+        button:hover {
+            background-color: #005fa3;
+        }
+    </style>
+</head>
+<body>
+
+<div id="map"></div>
+<div id="controls">
+    <button onclick="setActiveChapter('BirkenHack')">Go to BirkenHack</button>
+    <button onclick="setActiveChapter('AstralShip')">Go to Astral Ship</button>
+</div>
+
+<script>
+    const map = new maplibregl.Map({
+        container: 'map',
+        style: 'https://api.maptiler.com/maps/streets/style.json?key=78BXNpUr6UTqKBXJcQAj ',
+        center: [-3.018250, 53.393910],
+        zoom: 18.5,
+        bearing: 5,
+        pitch: 45
+    });
+
+    const birkenhack_place = {
+        'type': 'FeatureCollection',
+        'features': [
+            {
+                'type': 'Feature',
+                'properties': {
+                    'description': 'BirkenHack',
+                    'icon': ''
+                },
+                'geometry': {
+                    'type': 'Point',
+                    'coordinates': [-3.018250, 53.393910]
+                }
+            }
+        ]
+    };
+
+    const astralship_place = {
+        'type': 'FeatureCollection',
+        'features': [
+            {
+                'type': 'Feature',
+                'properties': {
+                    'description': 'AstralShip',
+                    'icon': ''
+                },
+                'geometry': {
+                    'type': 'Point',
+                    'coordinates': [-4.116065, 53.145364]
+                }
+            }
+        ]
+    };
+
+    const chapters = {
+        'BirkenHack': {
+            center: [-3.018250, 53.393910],
+            zoom: 18.5,
+            bearing: 5,
+            pitch: 45
+        },
+        'AstralShip': {
+            center: [-4.116065, 53.145364],
+            zoom: 18.5,
+            bearing: 5,
+            pitch: 45
+        }
+    };
+
+    let activeChapterName = null;
+
+    function setActiveChapter(chapterName) {
+        if (chapterName === activeChapterName) return;
+
+        map.flyTo(chapters[chapterName]);
+        activeChapterName = chapterName;
+    }
+
+    map.on('load', async () => {
+        // Add a GeoJSON source containing place coordinates and information.
+        birkenhack_logo = await map.loadImage('https://assets.chaos.social/accounts/avatars/114/163/499/563/447/990/original/e11dd447a07fec56.png');
+        astralship_logo = await map.loadImage('https://astralship.org/images/astralship-logo.png');
+        map.addSource('birkenhack_place', {
+            'type': 'geojson',
+            'data': birkenhack_place
+        });
+        map.addSource('astralship_place', {
+            'type': 'geojson',
+            'data': astralship_place
+        });
+        map.addImage('birkenhack_logo', birkenhack_logo.data);
+        map.addImage('astralship_logo', astralship_logo.data);
+        map.addLayer({
+            'id': 'birkenhack-label',
+            'type': 'symbol',
+            'source': 'birkenhack_place',
+            'layout': {
+                'text-field': ['get', 'description'],
+                'text-variable-anchor': ['top', 'bottom', 'left', 'right'],
+                'text-radial-offset': 2.0,
+                'text-justify': 'auto',
+                'icon-image': 'birkenhack_logo',
+                'icon-size': 0.15
+            }
+        });
+        map.addLayer({
+            'id': 'astralship-label',
+            'type': 'symbol',
+            'source': 'astralship_place',
+            'layout': {
+                'text-field': ['get', 'description'],
+                'text-variable-anchor': ['top', 'bottom', 'left', 'right'],
+                'text-radial-offset': 3.5,
+                'text-justify': 'auto',
+                'icon-image': 'astralship_logo',
+                'icon-size': 0.15
+            }
+        });
+    });
+</script>
+</body>
+</html>
+
